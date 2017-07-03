@@ -36,7 +36,7 @@ public class ApiConfig {
     public static class ApiFilter extends GuiceFilter {
     }
 
-    // for devserver
+    // Required when starting with mvn appengine:run
     @WebServlet(name = "empty", value = "/_ah/api/*")
     public static class EmptyServlet extends HttpServlet {}
 
