@@ -1,9 +1,9 @@
 package com.example;
 
-import com.google.api.server.spi.config.Api;
 import com.google.api.server.spi.config.ApiMethod;
+import com.google.api.server.spi.config.ApiReference;
 
-@Api(name = "test", version = "v1")
+@ApiReference(ApiBase.class)
 public class TestApi {
 
     @ApiMethod(httpMethod = ApiMethod.HttpMethod.GET, path = "hello")
